@@ -1,0 +1,7 @@
+services:
+- type: web
+  name: ejemplo_form
+  env: python
+  runtime: python3.10
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn app:app
